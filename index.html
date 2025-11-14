@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Trattoria</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
 
@@ -22,97 +23,6 @@
       </ul>
     </nav>
   </header>
-  <style>
-    :root{
-        --bg-color: #F8E9D5;
-        --button-bg-color: #482A1E;
-        --medium-text-color: #482A1E;
-        --dark-text-color: #140302;
-        --light-text-color: #F8E9D5;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: var(--bg-color);
-    }
 
-    /* HEADER */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 200px;
-      background-color: var(--bg-color);
-    }
-
-    /* LOGO */
-    .logo {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .logo h1 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: 900;
-      color: var(--medium-text-color);
-      letter-spacing: 2px;
-      line-height: 1;
-    }
-
-    .logo p {
-      margin: 8px 0 0;
-      font-size: 16px;
-      font-weight: 550;
-      color: var(--dark-text-color);
-      letter-spacing: 2px;
-    }
-
-    /* NAVIGATION */
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 50px;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-    }
-
-    nav li {
-      display: flex;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--dark-text-color);
-      font-size: 24px;
-      font-family: 'Playfair Display';
-      font-weight: 500;
-      transition: color 0.2s ease;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: #8B4513;
-      transition: width 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #8B4513;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-  </style>
 </body>
 </html>
