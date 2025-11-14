@@ -1,17 +1,24 @@
+:root {
+  --bg-color: #F8E9D5;
+  --button-bg-color: #482A1E;
+  --medium-text-color: #482A1E;
+  --dark-text-color: #140302;
+  --light-text-color: #F8E9D5;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #F8E9D5;
+  background-color: var(--bg-color);
 }
 
 /* HEADER */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   padding: 30px 200px;
-  background-color: #F8E9D5;
-  /*border-bottom: 2px solid #d9d0c0;*/
+  background-color: var(--bg-color);
 }
 
 /* LOGO */
@@ -25,7 +32,7 @@ header {
   margin: 0;
   font-size: 48px;
   font-weight: 900;
-  color: #482A1E;
+  color: var(--medium-text-color);
   letter-spacing: 2px;
   line-height: 1;
 }
@@ -34,7 +41,7 @@ header {
   margin: 8px 0 0;
   font-size: 16px;
   font-weight: 550;
-  color: #140302;
+  color: var(--dark-text-color);
   letter-spacing: 2px;
 }
 
@@ -45,29 +52,29 @@ nav ul {
   gap: 50px;
   margin: 0;
   padding: 0;
-  align-items: center; 
+  align-items: center;
 }
 
 nav li {
-  display: flex; 
+  display: flex;
 }
 
 nav a {
   text-decoration: none;
-  color: #140302;
+  color: var(--dark-text-color);
   font-size: 24px;
   font-family: 'Playfair Display';
   font-weight: 500;
   transition: color 0.2s ease;
   position: relative;
   display: inline-block;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
 nav a::after {
   content: '';
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
@@ -82,5 +89,3 @@ nav a:hover {
 nav a:hover::after {
   width: 100%;
 }
-
-
