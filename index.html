@@ -7,10 +7,17 @@
   <link rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍕</text></svg>">
   <style>
+    :root{
+        --bg-color: #F8E9D5;
+        --button-bg-color: #482A1E;
+        --medium-text-color: #482A1E;
+        --dark-text-color: #140302;
+        --light-text-color: #F8E9D5;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #F8E9D5;
+      background-color: var(--bg-color);
     }
 
     /* HEADER */
@@ -19,7 +26,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 30px 200px;
-      background-color: #F8E9D5;
+      background-color: var(--bg-color);
     }
 
     /* LOGO */
@@ -33,7 +40,7 @@
       margin: 0;
       font-size: 48px;
       font-weight: 900;
-      color: #482A1E;
+      color: var(--medium-text-color);
       letter-spacing: 2px;
       line-height: 1;
     }
@@ -42,7 +49,7 @@
       margin: 8px 0 0;
       font-size: 16px;
       font-weight: 550;
-      color: #140302;
+      color: var(--dark-text-color);
       letter-spacing: 2px;
     }
 
@@ -62,7 +69,7 @@
 
     nav a {
       text-decoration: none;
-      color: #140302;
+      color: var(--dark-text-color);
       font-size: 24px;
       font-family: 'Playfair Display';
       font-weight: 500;
