@@ -118,9 +118,13 @@ nav a:hover::after {
 }
 
 .pizza-image {
-  width: 100%;
+  width: 110%;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  padding-left: 40px;
 }
 
 .info h3 {
@@ -268,6 +272,10 @@ nav a:hover::after {
     gap: 40px;
   }
 
+  .info {
+    padding-left: 0; 
+  }
+
   .info h3 {
     font-size: 32px;
   }
@@ -288,4 +296,10 @@ nav a:hover::after {
     font-size: 20px;
     padding: 15px 40px;
   }
+
+  .pizza-image {
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
 }
