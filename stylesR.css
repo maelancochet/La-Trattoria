@@ -1,0 +1,173 @@
+:root {
+  --bg-color: #F8E9D5;
+  --button-bg-color: #482A1E;
+  --medium-text-color: #482A1E;
+  --dark-text-color: #140302;
+  --light-text-color: #F8E9D5;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px;
+  background-color: var(--bg-color);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--medium-text-color);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.logo p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 550;
+  color: var(--dark-text-color);
+  letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav li {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-text-color);
+  font-size: 24px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8B4513;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #8B4513;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.pizza-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-left: 450px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  padding: 20px;
+  background-color: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pizza-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+  background-color: #FFF5E8;
+  border: 2px solid #8B4513;
+}
+
+.imageMar {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.image4F {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.pizza-info {
+  flex: 1;
+}
+
+.titre {
+  color: #482A1E;
+  font-size: 400%;
+  display: block;
+  margin-left: 400px;
+}
+
+.carteh1 {
+  color: #482A1E;
+  display: block;
+  margin-left: 450px;
+}
+
+.carteh2 {
+  color: #482A1E;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.pizza-description {
+  color: #482A1E;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.pizza-prix {
+  color: #482A1E;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a.btn-c {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.pizza-container:hover .imageMar,
+.pizza-container:hover .image4F {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
