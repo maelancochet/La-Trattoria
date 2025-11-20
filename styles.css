@@ -6,6 +6,12 @@
   --light-text-color: #F8E9D5;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -88,4 +94,198 @@ nav a:hover {
 
 nav a:hover::after {
   width: 100%;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 30px 200px;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--medium-text-color);
+  margin-bottom: 60px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.pizza-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.info h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--medium-text-color);
+  margin-bottom: 30px;
+}
+
+.info ul {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.info li {
+  font-size: 22px;
+  color: var(--dark-text-color);
+  font-family: 'Playfair Display';
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  font-weight: 400;
+}
+
+.info li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.horaires {
+  margin-bottom: 40px;
+}
+
+.horaires h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--medium-text-color);
+  margin-bottom: 15px;
+}
+
+.horaires p {
+  font-size: 22px;
+  color: var(--dark-text-color);
+  font-family: 'Playfair Display';
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.commander-btn {
+  display: inline-block;
+  background-color: var(--button-bg-color);
+  color: var(--light-text-color);
+  padding: 18px 50px;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.commander-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(72, 42, 30, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1400px) {
+  header {
+    padding: 30px 100px;
+  }
+
+  .hero {
+    padding: 60px 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 30px 50px;
+  }
+
+  .hero {
+    padding: 40px 50px;
+  }
+
+  .hero h2 {
+    font-size: 48px;
+  }
+
+  .content {
+    gap: 50px;
+  }
+
+  nav ul {
+    gap: 30px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .logo h1 {
+    font-size: 36px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .info h3 {
+    font-size: 32px;
+  }
+
+  .info li {
+    font-size: 18px;
+  }
+
+  .horaires h3 {
+    font-size: 28px;
+  }
+
+  .horaires p {
+    font-size: 18px;
+  }
+
+  .commander-btn {
+    font-size: 20px;
+    padding: 15px 40px;
+  }
 }
