@@ -196,6 +196,90 @@ nav a:hover::after {
   box-shadow: 0 5px 20px rgba(72, 42, 30, 0.3);
 }
 
+/* CARTE/MENU - PIZZA CONTAINER */
+.pizza-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-left: 350px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pizza-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+  background-color: #FFF5E8;
+  border: 2px solid #8B4513;
+}
+
+.imageMar {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image4F {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza-container:hover .imageMar,
+.pizza-container:hover .image4F {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pizza-info {
+  flex: 1;
+}
+
+.titre {
+  color: #482A1E;
+  font-size: 400%;
+  display: block;
+  margin-left: 300px;
+}
+
+.carteh1 {
+  color: #482A1E;
+  display: block;
+  margin-left: 350px;
+}
+
+.carteh2 {
+  color: #482A1E;
+  margin-bottom: 15px;
+}
+
+.pizza-description {
+  color: #482A1E;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.pizza-prix {
+  color: #482A1E;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a.btn-c {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  width: 910px;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -311,10 +395,8 @@ footer a {
   }
 
   .pizza-image {
-  width: 90%;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  }
 }
-}
-
-
