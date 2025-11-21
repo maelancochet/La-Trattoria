@@ -199,7 +199,6 @@ nav a:hover::after {
 /* FOOTER */
 footer {
   text-align: center;
-  font-family: 'Playfair Display';
   padding: 30px;
   background-color: #F6E4CB;
   color: #000;
@@ -312,3 +311,4 @@ footer {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 }
+
