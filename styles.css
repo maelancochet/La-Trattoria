@@ -204,6 +204,11 @@ footer {
   color: #000;
 }
 
+footer a {
+  padding-left: 10px;
+  color: black;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1400px) {
   header {
@@ -311,4 +316,5 @@ footer {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 }
+
 
