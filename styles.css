@@ -196,6 +196,15 @@ nav a:hover::after {
   box-shadow: 0 5px 20px rgba(72, 42, 30, 0.3);
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  font-family: 'Playfair Display';
+  padding: 30px;
+  background-color: #F6E4CB;
+  color: #000;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1400px) {
   header {
