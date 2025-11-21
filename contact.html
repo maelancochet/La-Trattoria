@@ -5,7 +5,7 @@
   <link rel="icon" type="image/x-icon" href="https://maelancochet.github.io/La-Trattoria/public/images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Trattoria - Contact</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  
 </head>
 <body>
   <header>
@@ -24,8 +24,73 @@
     </nav>
   </header>
 
+  <section class="contact-section">
+    <h2>Contactez-nous</h2>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-block">
+          <h3>Adresse</h3>
+          <p>24 rue des Carmes<br>31000 Toulouse</p>
+        </div>
+
+        <div class="info-block">
+          <h3>Téléphone</h3>
+          <p><a href="tel:+33600000000">06 00 00 00 00</a></p>
+        </div>
+
+        <div class="info-block">
+          <h3>Email</h3>
+          <p><a href="mailto:contact@latrattoria.fr">contact@latrattoria.fr</a></p>
+        </div>
+
+        <div class="info-block">
+          <h3>Horaires d'ouverture</h3>
+          <p>Mardi - Dimanche<br>18:00 - 21:15</p>
+          <p style="margin-top: 10px; font-style: italic;">Fermé le lundi</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Envoyez-nous un message</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Nom *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.4658!2d1.4437!3d43.5999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6a1d64c5c1%3A0x2d4e6a8e5f3c1b2a!2s24%20Rue%20des%20Carmes%2C%2031000%20Toulouse!5e0!3m2!1sfr!2sfr!4v1234567890" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
   <footer>
-    <small>Copyright © 2025   La Trattoria. 
+    <small>Copyright © 2025 La Trattoria. 
       <a href="https://maelancochet.github.io/La-Trattoria/apropos.html">Mentions légales</a>
     </small>
   </footer>
