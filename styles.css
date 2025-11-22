@@ -201,9 +201,11 @@ nav a:hover::after {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  margin-left: 350px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   margin-bottom: 30px;
+  max-width: 1000px;
   padding: 20px;
   background-color: auto;
   border-radius: 20px;
@@ -247,13 +249,22 @@ nav a:hover::after {
   color: #482A1E;
   font-size: 400%;
   display: block;
-  margin-left: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .carteh1 {
   color: #482A1E;
   display: block;
-  margin-left: 350px;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .carteh2 {
@@ -277,7 +288,7 @@ a.btn-c {
   text-decoration: none;
   color: inherit;
   display: flex;
-  width: 910px;
+  flex-direction: column;
 }
 
 /* FOOTER */
@@ -381,6 +392,7 @@ footer a {
   color: var(--dark-text-color);
   font-family: Arial, sans-serif;
   transition: border-color 0.2s ease;
+  box-sizing: border-box;
 }
 
 .form-group input:focus,
@@ -429,6 +441,140 @@ footer a {
   display: block;
 }
 
+/* PAGE PAIEMENT */
+.paiement-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.paiement-titre {
+  color: var(--medium-text-color);
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.paiement-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* RÉCAPITULATIF COMMANDE */
+.commande-recap {
+  flex: 1;
+  background-color: #FFF5E8;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #8B4513;
+}
+
+.commande-recap h2 {
+  color: var(--medium-text-color);
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.commande-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #E5D4BD;
+}
+
+.item-info h3 {
+  color: var(--medium-text-color);
+  margin: 0 0 8px 0;
+  font-size: 22px;
+}
+
+.item-info p {
+  color: var(--dark-text-color);
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.item-prix {
+  color: var(--medium-text-color);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.commande-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--medium-text-color);
+  padding-top: 15px;
+}
+
+.total-prix {
+  font-size: 32px;
+  color: #8B4513;
+}
+
+/* FORMULAIRE PAIEMENT */
+.paiement-form {
+  flex: 1.5;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.paiement-form h2 {
+  color: var(--medium-text-color);
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.btn-payer {
+  width: 100%;
+  padding: 18px;
+  background-color: var(--button-bg-color);
+  color: var(--light-text-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.btn-payer:hover {
+  background-color: #8B4513;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(139, 69, 19, 0.3);
+}
+
+.paiement-securise {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--medium-text-color);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1400px) {
   header {
@@ -437,6 +583,16 @@ footer a {
 
   .hero {
     padding: 60px 100px;
+  }
+
+  .contact-section {
+    padding: 30px 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .paiement-container {
+    max-width: 95%;
   }
 }
 
@@ -464,6 +620,37 @@ footer a {
   nav a {
     font-size: 20px;
   }
+
+  .contact-section {
+    padding: 30px 50px;
+  }
+
+  .contact-section h2 {
+    font-size: 52px;
+  }
+
+  .contact-container {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 968px) {
+  .paiement-content {
+    flex-direction: column;
+  }
+  
+  header {
+    padding: 30px 50px;
+  }
+  
+  .paiement-titre {
+    font-size: 36px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -485,6 +672,8 @@ footer a {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    gap: 15px;
   }
 
   nav a {
@@ -534,5 +723,85 @@ footer a {
     width: 90%;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+
+  /* PAGE CARTE RESPONSIVE */
+  .titre {
+    font-size: 250%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .carteh1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 24px;
+    padding-left: 0;
+  }
+
+  .pizza-container {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: calc(100% - 40px);
+  }
+
+  .imageMar,
+  .image4F {
+    max-width: 100%;
+  }
+
+  a.btn-c {
+    width: 100%
+  }
+
+  /* PAGE CONTACT RESPONSIVE */
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .info-block h3 {
+    font-size: 24px;
+  }
+
+  .info-block p {
+    font-size: 18px;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .contact-form h3 {
+    font-size: 24px;
+  }
+
+  .submit-btn {
+    font-size: 20px;
+    padding: 15px 40px;
+  }
+
+  .map-container {
+    margin-top: 40px;
+  }
+
+  .map-container iframe {
+    height: 300px;
   }
 }
