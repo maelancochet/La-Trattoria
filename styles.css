@@ -804,4 +804,122 @@ footer a {
   .map-container iframe {
     height: 300px;
   }
+
 }
+.apropos-section {
+      padding: 30px 200px;
+      margin-bottom: 50px;
+    }
+
+    .apropos-section h2 {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--medium-text-color);
+      margin-bottom: 40px;
+      line-height: 1.1;
+      letter-spacing: 1px;
+    }
+
+    .apropos-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .apropos-content p {
+      font-size: 22px;
+      color: var(--dark-text-color);
+      font-family: 'Playfair Display';
+      line-height: 1.8;
+      font-weight: 400;
+      text-align: justify;
+    }
+
+    .caracteristiques-box {
+      background-color: #F6E4CB;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+    }
+
+    .caracteristiques-box h3 {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--medium-text-color);
+      margin-bottom: 25px;
+    }
+
+    .caracteristiques-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .caracteristiques-box li {
+      font-size: 22px;
+      color: var(--dark-text-color);
+      font-family: 'Playfair Display';
+      margin-bottom: 15px;
+      padding-left: 35px;
+      position: relative;
+      font-weight: 400;
+    }
+
+    .caracteristiques-box li:before {
+      content: "🍕";
+      position: absolute;
+      left: 0;
+      font-size: 22px;
+    }
+
+    .mentions-legales {
+      padding: 30px 200px;
+      margin-top: 80px;
+      background-color: #F6E4CB;
+    }
+
+    .mentions-legales h2 {
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--medium-text-color);
+      margin-bottom: 30px;
+    }
+
+    .mentions-legales p {
+      font-size: 18px;
+      color: var(--dark-text-color);
+      font-family: 'Playfair Display';
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .mentions-legales strong {
+      color: var(--medium-text-color);
+      font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .apropos-section, .mentions-legales {
+        padding: 40px 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .apropos-section, .mentions-legales {
+        padding: 30px 20px;
+      }
+
+      .apropos-section h2 {
+        font-size: 36px;
+      }
+
+      .mentions-legales h2 {
+        font-size: 32px;
+      }
+
+      .apropos-content p,
+      .caracteristiques-box li,
+      .mentions-legales p {
+        font-size: 18px;
+      }
+    }
