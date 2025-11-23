@@ -210,8 +210,8 @@ nav a:hover::after {
   color: #482A1E;
   font-size: 400%;
   display: block;
-  text-align: center;
-  margin: 40px auto 20px;
+  text-align: left;
+  margin-left: 200px;
 }
 
 .carteh1 {
