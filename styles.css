@@ -1,3 +1,4 @@
+/* ==================== VARIABLES ==================== */
 :root {
   --bg-color: #F8E9D5;
   --button-bg-color: #482A1E;
@@ -6,6 +7,7 @@
   --light-text-color: #F8E9D5;
 }
 
+/* ==================== RESET ==================== */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +20,7 @@ body {
   background-color: var(--bg-color);
 }
 
-/* HEADER */
+/* ==================== HEADER ==================== */
 header {
   display: flex;
   justify-content: space-between;
@@ -27,7 +29,7 @@ header {
   background-color: var(--bg-color);
 }
 
-/* LOGO */
+/* ==================== LOGO ==================== */
 .logo {
   display: flex;
   flex-direction: column;
@@ -51,7 +53,7 @@ header {
   letter-spacing: 2px;
 }
 
-/* NAVIGATION */
+/* ==================== NAVIGATION ==================== */
 nav ul {
   list-style: none;
   display: flex;
@@ -96,7 +98,7 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* HERO SECTION */
+/* ==================== HERO SECTION ==================== */
 .hero {
   padding: 30px 200px;
 }
@@ -176,7 +178,9 @@ nav a:hover::after {
   font-weight: 400;
 }
 
-.commander-btn {
+/* ==================== BUTTONS ==================== */
+.commander-btn,
+.submit-btn {
   display: inline-block;
   background-color: var(--button-bg-color);
   color: var(--light-text-color);
@@ -191,20 +195,44 @@ nav a:hover::after {
   letter-spacing: 1px;
 }
 
-.commander-btn:hover {
+.commander-btn:hover,
+.submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 20px rgba(72, 42, 30, 0.3);
 }
 
-/* CARTE/MENU - PIZZA CONTAINER */
+.submit-btn {
+  width: 100%;
+}
+
+/* ==================== CARTE/MENU - PIZZA CONTAINER ==================== */
+.titre {
+  color: #482A1E;
+  font-size: 400%;
+  display: block;
+  text-align: center;
+  margin: 40px auto 20px;
+}
+
+.carteh1 {
+  color: #482A1E;
+  display: block;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  padding-left: 20px;
+}
+
+.carteh2 {
+  color: #482A1E;
+  margin-bottom: 15px;
+}
+
 .pizza-container {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 20px auto 30px;
   max-width: 1000px;
   padding: 20px;
   background-color: auto;
@@ -221,13 +249,7 @@ nav a:hover::after {
   border: 2px solid #8B4513;
 }
 
-.imageMar {
-  max-width: 300px;
-  height: auto;
-  border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
+.imageMar,
 .image4F {
   max-width: 300px;
   height: auto;
@@ -243,33 +265,6 @@ nav a:hover::after {
 
 .pizza-info {
   flex: 1;
-}
-
-.titre {
-  color: #482A1E;
-  font-size: 400%;
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.carteh1 {
-  color: #482A1E;
-  display: block;
-  text-align: left;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  padding-left: 20px;
-}
-
-.carteh2 {
-  color: #482A1E;
-  margin-bottom: 15px;
 }
 
 .pizza-description {
@@ -291,20 +286,7 @@ a.btn-c {
   flex-direction: column;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  background-color: #F6E4CB;
-  color: #000;
-}
-
-footer a {
-  padding-left: 10px;
-  color: black;
-}
-
-/* CONTACT SECTION */
+/* ==================== CONTACT SECTION ==================== */
 .contact-section {
   padding: 30px 200px;
 }
@@ -355,6 +337,7 @@ footer a {
   color: #8B4513;
 }
 
+/* ==================== CONTACT FORM ==================== */
 .contact-form {
   background-color: #F6E4CB;
   padding: 40px;
@@ -406,27 +389,16 @@ footer a {
   min-height: 150px;
 }
 
-.submit-btn {
-  display: inline-block;
-  background-color: var(--button-bg-color);
-  color: var(--light-text-color);
-  padding: 18px 50px;
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: none;
-  cursor: pointer;
-  letter-spacing: 1px;
-  width: 100%;
+.form-row {
+  display: flex;
+  gap: 20px;
 }
 
-.submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(72, 42, 30, 0.3);
+.form-row .form-group {
+  flex: 1;
 }
 
+/* ==================== MAP ==================== */
 .map-container {
   margin-top: 60px;
   border-radius: 20px;
@@ -441,7 +413,101 @@ footer a {
   display: block;
 }
 
-/* PAGE PAIEMENT */
+/* ==================== À PROPOS SECTION ==================== */
+.apropos-section {
+  padding: 30px 200px;
+  margin-bottom: 50px;
+}
+
+.apropos-section h2 {
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--medium-text-color);
+  margin-bottom: 40px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.apropos-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.apropos-content p {
+  font-size: 22px;
+  color: var(--dark-text-color);
+  font-family: 'Playfair Display';
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.caracteristiques-box {
+  background-color: #F6E4CB;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+.caracteristiques-box h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--medium-text-color);
+  margin-bottom: 25px;
+}
+
+.caracteristiques-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.caracteristiques-box li {
+  font-size: 22px;
+  color: var(--dark-text-color);
+  font-family: 'Playfair Display';
+  margin-bottom: 15px;
+  padding-left: 35px;
+  position: relative;
+  font-weight: 400;
+}
+
+.caracteristiques-box li:before {
+  content: "🍕";
+  position: absolute;
+  left: 0;
+  font-size: 22px;
+}
+
+/* ==================== MENTIONS LÉGALES ==================== */
+.mentions-legales {
+  padding: 30px 200px;
+  margin-top: 80px;
+  background-color: #F6E4CB;
+}
+
+.mentions-legales h2 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--medium-text-color);
+  margin-bottom: 30px;
+}
+
+.mentions-legales p {
+  font-size: 18px;
+  color: var(--dark-text-color);
+  font-family: 'Playfair Display';
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.mentions-legales strong {
+  color: var(--medium-text-color);
+  font-weight: 700;
+}
+
+/* ==================== PAGE PAIEMENT ==================== */
 .paiement-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -462,7 +528,7 @@ footer a {
   align-items: flex-start;
 }
 
-/* RÉCAPITULATIF COMMANDE */
+/* Récapitulatif commande */
 .commande-recap {
   flex: 1;
   background-color: #FFF5E8;
@@ -521,7 +587,7 @@ footer a {
   color: #8B4513;
 }
 
-/* FORMULAIRE PAIEMENT */
+/* Formulaire paiement */
 .paiement-form {
   flex: 1.5;
   background-color: white;
@@ -535,15 +601,6 @@ footer a {
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 28px;
-}
-
-.form-row {
-  display: flex;
-  gap: 20px;
-}
-
-.form-row .form-group {
-  flex: 1;
 }
 
 .btn-payer {
@@ -575,18 +632,29 @@ footer a {
   opacity: 0.8;
 }
 
-/* RESPONSIVE */
+/* ==================== FOOTER ==================== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #F6E4CB;
+  color: #000;
+}
+
+footer a {
+  padding-left: 10px;
+  color: black;
+}
+
+/* ==================== RESPONSIVE ==================== */
 @media (max-width: 1400px) {
-  header {
-    padding: 30px 100px;
-  }
-
-  .hero {
-    padding: 60px 100px;
-  }
-
+  header,
+  .hero,
   .contact-section {
     padding: 30px 100px;
+  }
+  
+  .hero {
+    padding: 60px 100px;
   }
 }
 
@@ -597,38 +665,34 @@ footer a {
 }
 
 @media (max-width: 1024px) {
-  header {
-    padding: 30px 50px;
-  }
-
-  .hero {
+  header,
+  .hero,
+  .contact-section,
+  .apropos-section,
+  .mentions-legales {
     padding: 40px 50px;
   }
-
+  
   .hero h2 {
     font-size: 48px;
   }
-
-  .content {
-    gap: 50px;
-  }
-
-  nav ul {
-    gap: 30px;
-  }
-
-  nav a {
-    font-size: 20px;
-  }
-
-  .contact-section {
-    padding: 30px 50px;
-  }
-
+  
   .contact-section h2 {
     font-size: 52px;
   }
-
+  
+  .content {
+    gap: 50px;
+  }
+  
+  nav ul {
+    gap: 30px;
+  }
+  
+  nav a {
+    font-size: 20px;
+  }
+  
   .contact-container {
     gap: 60px;
   }
@@ -646,7 +710,7 @@ footer a {
   .paiement-titre {
     font-size: 36px;
   }
-
+  
   .contact-container {
     grid-template-columns: 1fr;
     gap: 50px;
@@ -659,267 +723,154 @@ footer a {
     padding: 20px;
     gap: 20px;
   }
-
+  
   .logo h1 {
     font-size: 36px;
   }
-
+  
   .logo p {
     font-size: 14px;
   }
-
+  
   nav ul {
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    gap: 15px;
   }
-
+  
   nav a {
     font-size: 18px;
   }
-
-  .hero {
+  
+  .hero,
+  .contact-section,
+  .apropos-section,
+  .mentions-legales {
     padding: 30px 20px;
   }
-
+  
   .hero h2 {
     font-size: 36px;
     margin-bottom: 40px;
   }
-
+  
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .apropos-section h2 {
+    font-size: 36px;
+  }
+  
+  .mentions-legales h2 {
+    font-size: 32px;
+  }
+  
   .content {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-
+  
   .info {
     padding-left: 0;
   }
-
+  
   .info h3 {
     font-size: 32px;
   }
-
+  
   .info li {
     font-size: 18px;
   }
-
+  
   .horaires h3 {
     font-size: 28px;
   }
-
+  
   .horaires p {
     font-size: 18px;
   }
-
-  .commander-btn {
+  
+  .commander-btn,
+  .submit-btn {
     font-size: 20px;
     padding: 15px 40px;
   }
-
+  
   .pizza-image {
     width: 90%;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   }
   
   .form-row {
     flex-direction: column;
   }
-
-  /* PAGE CARTE RESPONSIVE */
+  
+  /* Page Carte */
   .titre {
     font-size: 250%;
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
   }
-
+  
   .carteh1 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 20px;
     text-align: center;
     font-size: 24px;
     padding-left: 0;
   }
-
+  
   .pizza-container {
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
     max-width: calc(100% - 40px);
   }
-
+  
   .imageMar,
   .image4F {
     max-width: 100%;
   }
-
+  
   a.btn-c {
-    width: 100%
+    width: 100%;
   }
-
-  /* PAGE CONTACT RESPONSIVE */
-  .contact-section {
-    padding: 30px 20px;
-  }
-
-  .contact-section h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
-
+  
+  /* Page Contact */
   .contact-container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-
+  
   .info-block h3 {
     font-size: 24px;
   }
-
+  
   .info-block p {
     font-size: 18px;
   }
-
+  
   .contact-form {
     padding: 30px 20px;
   }
-
+  
   .contact-form h3 {
     font-size: 24px;
   }
-
-  .submit-btn {
-    font-size: 20px;
-    padding: 15px 40px;
-  }
-
+  
   .map-container {
     margin-top: 40px;
   }
-
+  
   .map-container iframe {
     height: 300px;
   }
-
+  
+  /* À propos */
+  .apropos-content p,
+  .caracteristiques-box li,
+  .mentions-legales p {
+    font-size: 18px;
+  }
 }
-.apropos-section {
-      padding: 30px 200px;
-      margin-bottom: 50px;
-    }
-
-    .apropos-section h2 {
-      font-size: 64px;
-      font-weight: 900;
-      color: var(--medium-text-color);
-      margin-bottom: 40px;
-      line-height: 1.1;
-      letter-spacing: 1px;
-    }
-
-    .apropos-content {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    .apropos-content p {
-      font-size: 22px;
-      color: var(--dark-text-color);
-      font-family: 'Playfair Display';
-      line-height: 1.8;
-      font-weight: 400;
-      text-align: justify;
-    }
-
-    .caracteristiques-box {
-      background-color: #F6E4CB;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-      margin: 40px 0;
-    }
-
-    .caracteristiques-box h3 {
-      font-size: 32px;
-      font-weight: 900;
-      color: var(--medium-text-color);
-      margin-bottom: 25px;
-    }
-
-    .caracteristiques-box ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .caracteristiques-box li {
-      font-size: 22px;
-      color: var(--dark-text-color);
-      font-family: 'Playfair Display';
-      margin-bottom: 15px;
-      padding-left: 35px;
-      position: relative;
-      font-weight: 400;
-    }
-
-    .caracteristiques-box li:before {
-      content: "🍕";
-      position: absolute;
-      left: 0;
-      font-size: 22px;
-    }
-
-    .mentions-legales {
-      padding: 30px 200px;
-      margin-top: 80px;
-      background-color: #F6E4CB;
-    }
-
-    .mentions-legales h2 {
-      font-size: 48px;
-      font-weight: 900;
-      color: var(--medium-text-color);
-      margin-bottom: 30px;
-    }
-
-    .mentions-legales p {
-      font-size: 18px;
-      color: var(--dark-text-color);
-      font-family: 'Playfair Display';
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
-
-    .mentions-legales strong {
-      color: var(--medium-text-color);
-      font-weight: 700;
-    }
-
-    @media (max-width: 1024px) {
-      .apropos-section, .mentions-legales {
-        padding: 40px 50px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .apropos-section, .mentions-legales {
-        padding: 30px 20px;
-      }
-
-      .apropos-section h2 {
-        font-size: 36px;
-      }
-
-      .mentions-legales h2 {
-        font-size: 32px;
-      }
-
-      .apropos-content p,
-      .caracteristiques-box li,
-      .mentions-legales p {
-        font-size: 18px;
-      }
-    }
